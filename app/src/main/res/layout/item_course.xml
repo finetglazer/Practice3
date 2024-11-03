@@ -1,0 +1,43 @@
+<!-- res/layout/item_course.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/courseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/courseMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major: "
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/courseStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date: "
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/courseFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fee: "
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/courseIsActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is Active: "
+        android:textSize="14sp"/>
+</LinearLayout>

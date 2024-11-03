@@ -1,0 +1,79 @@
+<!-- res/layout/fragment_tim_kiem.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Radio Buttons for Activation Status -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbActivated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activated" />
+
+        <RadioButton
+            android:id="@+id/rbNotActivated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Activated" />
+    </RadioGroup>
+
+    <!-- Total Courses -->
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Courses: " />
+
+    <!-- Statistics -->
+    <TextView
+        android:id="@+id/tvStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statistics:" />
+
+    <!-- Statistics Header -->
+    <TextView
+        android:id="@+id/tvStatisticsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Statistics:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <!-- Statistics Table -->
+    <TableLayout
+        android:id="@+id/tableLayoutStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:shrinkColumns="1"
+        android:layout_marginTop="8dp">
+
+        <!-- Table Header -->
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:text="Month"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Amount"
+                android:textStyle="bold"
+                android:padding="8dp" />
+        </TableRow>
+
+        <!-- Table rows will be added dynamically -->
+
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<!-- res/layout/fragment_thong_tin.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Major Image -->
+        <ImageView
+            android:id="@+id/majorImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_love" />
+
+        <!-- Major Name -->
+        <TextView
+            android:id="@+id/majorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer Science"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Major Description -->
+        <TextView
+            android:id="@+id/majorDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I love this, just that!"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>
