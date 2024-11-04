@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_list"
-        android:icon="@drawable/ic_list"
+        android:icon="@drawable/baseline_checklist_24"
         android:title="Danh sách" />
     <item
         android:id="@+id/nav_info"
-        android:icon="@drawable/ic_info"
+        android:icon="@drawable/baseline_import_contacts_24"
         android:title="Thông tin" />
     <item
         android:id="@+id/nav_search"
-        android:icon="@drawable/ic_search"
+        android:icon="@drawable/baseline_manage_search_24"
         android:title="Tìm kiếm và Thống kê" />
 </menu>

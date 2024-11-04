@@ -34,6 +34,10 @@
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         </activity>
 
+        <activity android:name=".activity.AddCovidStrainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+        </activity>
 
 
     </application>

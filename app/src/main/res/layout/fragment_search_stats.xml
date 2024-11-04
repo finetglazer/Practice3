@@ -1,0 +1,113 @@
+<!-- res/layout/fragment_search_stats.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Date Range Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date Range:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/etStartDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Start Date"
+                android:focusable="false"
+                android:clickable="true" />
+
+            <EditText
+                android:id="@+id/etEndDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="End Date"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Region Selection (RadioButtons) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Region:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgRegion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/rbVietnam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vietnam" />
+
+            <RadioButton
+                android:id="@+id/rbWorld"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="World"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <!-- Search Button -->
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_marginTop="16dp" />
+
+        <!-- Statistics Table -->
+        <TableLayout
+            android:id="@+id/tableLayoutStatistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:shrinkColumns="1"
+            android:layout_marginTop="16dp">
+
+            <!-- Table Header -->
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Structure"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Count"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <!-- Table rows will be added dynamically -->
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

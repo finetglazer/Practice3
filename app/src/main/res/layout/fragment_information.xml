@@ -1,0 +1,39 @@
+<!-- res/layout/fragment_information.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Covid Strain Image -->
+        <ImageView
+            android:id="@+id/ivStrainImage"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_coronavirus_24" />
+
+        <!-- Strain Name -->
+        <TextView
+            android:id="@+id/tvStrainName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strain Name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Strain Information -->
+        <TextView
+            android:id="@+id/tvStrainInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Information about the strain..."
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>

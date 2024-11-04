@@ -1,0 +1,90 @@
+<!-- res/layout/activity_add_covid_strain.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Virus Name -->
+        <EditText
+            android:id="@+id/etVirusName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Virus Name" />
+
+        <!-- Structure -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Structure:"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbStructureARN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ARN" />
+
+            <CheckBox
+                android:id="@+id/cbStructureProteinS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Protein-S" />
+
+            <CheckBox
+                android:id="@+id/cbStructureProteinN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Protein-N" />
+        </LinearLayout>
+
+        <!-- Appearance Date -->
+        <EditText
+            android:id="@+id/etAppearanceDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Appearance Date"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <!-- Vaccine Status -->
+        <CheckBox
+            android:id="@+id/cbVaccineStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaccine Available" />
+
+        <!-- World Infection Count -->
+        <EditText
+            android:id="@+id/etWorldInfectionCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="World Infection Count"
+            android:inputType="number" />
+
+        <!-- Vietnam Infection Count -->
+        <EditText
+            android:id="@+id/etVietnamInfectionCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vietnam Infection Count"
+            android:inputType="number" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveCovidStrain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
